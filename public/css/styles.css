@@ -1,0 +1,28 @@
+body{
+  background-color: #C6A67A;
+}
+h1 {
+  color: #4D1508;
+  text-align: center;
+}
+.add-item{
+  text-align: center;
+  color: #280E10;
+}
+
+.item-list{
+  text-align: center;
+  margin: 30px;
+}
+
+.item-margin{
+  border: 1px solid;
+}
+
+.strike-through{
+  text-decoration: line-through;
+}
+
+ul{
+  list-style-type: none;
+}

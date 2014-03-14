@@ -1,0 +1,26 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %title To Do App
+    %meta{content: "VC To Do App", name: "description"}/
+    %meta{content: "Vnu", name: "author"}/
+    %link{href: "css/styles.css?v=1.0", rel: "stylesheet"}/
+    %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", type: "text/javascript"}
+    /[if lt IE 9]
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    %h1 To Do
+    %script{src: "js/scripts.js"}
+    %hr/
+    %form#add-form.add-item{action: "/"}
+      Item:
+      %input{name: "item", type: "text"}/
+      %input#add-button{type: "submit", value: "Add"}/
+      %input#clear-button{type: "button", value: "Clear"}/
+    .item-list
+      %ul
+
+
+:javascript
+  var itemCount = parseInt("#{@items}");
